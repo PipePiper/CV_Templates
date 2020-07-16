@@ -6,7 +6,7 @@ from sklearn import model_selection
 if __name__ == "__main__":
 #Step-1: Training data is in a CSV file called train.csv
 df = pd.read_csv("train.csv")
-#Step-2: we create a new column called kfold and fill it with -1
+#Step-2: create a new column called kfold and fill it with -1
 df["kfold"] = -1
 #Step-3: randomize the rows of the data
 df = df.sample(frac=1).reset_index(drop=True)
